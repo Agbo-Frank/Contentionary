@@ -27,7 +27,7 @@ export function Features(){
                 <Typography className="text-primary-orange font-semibold text-base" component="h1" align='center' gutterBottom>
                     <Typography component='span' className="text-primary-blue-200 font-semibold text-base">Our</Typography> Features
                 </Typography>
-                <Typography className='font-light text-xs md:text-sm' align='center' sx={{color: '#696984'}}>
+                <Typography className='font-light text-sm md:text-sm' align='center' sx={{color: '#696984'}}>
                     This very extraordinary feature, can make learning activities more efficient
                 </Typography>
             </Box>

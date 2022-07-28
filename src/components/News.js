@@ -20,13 +20,13 @@ export function News(){
     };
     return(
         <>
-            <Container className=' py-10 space-y-4 my-4'>
+            <Container className='py-10 space-y-4 my-4'>
                 <div>
-                    <Typography className="text-primary-blue-200 text-lg font-medium leading-10" component="h2" gutterBottom align="center">
+                    <Typography className="text-primary-blue-200 text-base font-medium md:leading-10" component="h2" gutterBottom align="center">
                         Lastest News and Resources
                     </Typography>
 
-                    <Typography className="text-secondary-200 font-light leading-6 text-sm" component="p" gutterBottom align="center">
+                    <Typography className="text-secondary-200 font-light md:leading-6 text-sm" component="p" gutterBottom align="center">
                         See the developments that have occurred to Contentionary in the world
                     </Typography>
                 </div>
@@ -95,11 +95,11 @@ export function News(){
                 </Box>
             </Container>
 
-            <div className='block md:hidden my-10 mt-24'>
+            <div className='block md:hidden mb-10'>
                 <Slider {...settings}>
                     <div>
                         <div className='flex flex-col justify-between space-y-5 px-5'>
-                            <div className='relative w-9/12 mx-auto h-fit rounded-lg overflow-hidden'>
+                            <div className='relative w-10/12 mx-auto h-fit rounded-lg overflow-hidden'>
                                 <img src={news2} alt="news image" className='w-full h-auto object-cover'/>
                                 <Button color="primary" variant='contained' size='small' sx={{fontSize: 9}} className='absolute bottom-2 right-2 text-xsm'>PRESS RELEASE</Button>
                             </div>
@@ -117,7 +117,7 @@ export function News(){
 
                     <div>
                         <div className='flex flex-col justify-between space-y-5 px-5'>
-                            <div className='relative w-9/12 mx-auto h-fit rounded-lg overflow-hidden'>
+                            <div className='relative w-10/12 mx-auto h-fit rounded-lg overflow-hidden'>
                                 <img src={news3} alt="news image" className='w-full h-auto object-cover'/>
                                 <Button color="primary" variant='contained' size='small' sx={{fontSize: 9}} className='absolute bottom-2 right-2 text-xsm'>NEWS</Button>
                             </div>
@@ -135,7 +135,7 @@ export function News(){
 
                     <div>
                         <div className='flex flex-col justify-between space-y-5 px-5'>
-                            <div className='relative w-9/12 mx-auto h-fit rounded-lg overflow-hidden'>
+                            <div className='relative w-10/12 mx-auto h-fit rounded-lg overflow-hidden'>
                                 <img src={news4} alt="news image" className='w-full h-auto object-cover'/>
                                 <Button color="primary" variant='contained' size='small' sx={{fontSize: 9}} className='absolute bottom-2 right-2 text-xsm'>NEWS</Button>
                             </div>

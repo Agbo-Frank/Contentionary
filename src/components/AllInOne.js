@@ -23,7 +23,7 @@ export function AllInOne(){
                 <Typography className="text-primary-orange font-semibold text-base" component="h1" align='center' gutterBottom>
                     <Typography component='span' className="text-primary-blue-200 font-semibold text-base">All-In-One</Typography> Cloud Software.
                 </Typography>
-                <Typography className='font-light text-xs md:text-sm' align='center' sx={{color: '#696984'}}>
+                <Typography className='font-light text-sm' align='center' sx={{color: '#696984'}}>
                     Contentionary is one powerful online software suite that combines all the tools needed to run a successful school or office.
                 </Typography>
             </Box>

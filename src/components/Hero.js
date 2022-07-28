@@ -21,14 +21,14 @@ export function Hero(){
                         Share, sell, engage, support and impact your audience/students 
                         using several Apps in Contentionary
                     </Typography>
-                    <Box className='flex space-x-4 items-center'>
+                    <Box className='flex space-x-2 md:space-x-4 items-center'>
                         <Button variant='contained' className='py-2 lg:py-3'>Join for free</Button>
-                        <div className="flex space-x-2 items-center">
+                        {/* <div className="flex space-x-2 items-center">
                             <Avatar className='bg-white'>
                                 <PlayArrowIcon sx={{color: '#23BDEE'}}/>
                             </Avatar>
                             <p className='text-xsm font-light'>Watch how it works</p>
-                        </div>
+                        </div> */}
                     </Box>
                 </Box>
 
