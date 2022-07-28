@@ -10,10 +10,10 @@ export function Header() {
     let [toggle, setToggle] = useState(false)
     return(
         <>
-            <div className="relative flex flex-row-reverse lg:flex-row px-0 lg:px-3 items-center lg:space-x-4 justify-between w-full">
+            <div className="relative flex flex-row-reverse lg:flex-row lg:px-3 items-center lg:space-x-4 justify-between w-full">
                 <Logo />
 
-                <Box className={`${toggle ? 'block' : 'hidden'} bg-white lg:bg-transparent absolute lg:relative top-0 left-0 z-50 lg:z-0 py-8 lg:py-1 lg:flex items-center space-y-3 lg:space-y-0 lg:space-x-4 justify-between`}>
+                <Box className={`${toggle ? 'block' : 'hidden'} bg-white w-full lg:bg-transparent absolute lg:relative top-0 left-0 z-50 lg:z-0 py-5 lg:py-1 lg:flex items-center space-y-1 lg:space-y-0 lg:space-x-4 justify-between`}>
                     
                     <Button className="block lg:font-light">Home</Button>
                     <Button className="block lg:font-light">Careers</Button>
@@ -24,7 +24,7 @@ export function Header() {
                     <Button variant="contained" className=" block lg:font-light bg-white text-black">Login</Button>
                     <Button variant="contained" className="block bg-white text-black lg:text-white lg:bg-primary-orange ">Create Account</Button>
 
-                    <Avatar className="bg-primary-orange absolute top-0 right-0 w-8 h-8 lg:hidden" onClick={() => setToggle(false)}>
+                    <Avatar className="bg-primary-orange absolute top-0 right-4 w-8 h-8 lg:hidden" onClick={() => setToggle(false)}>
                         <CloseIcon className="text-lg" sx={{color: 'white'}}/>
                     </Avatar>
                 </Box>
