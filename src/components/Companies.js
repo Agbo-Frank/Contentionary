@@ -5,8 +5,8 @@ import Slider from 'react-slick';
 export function Companies(){
     return(
         <Container className='my-8 md:my-14'>
-            <p className='text-center my-3 md:my-5 text-xs md:text-sm' style={{color: '#696984'}}>Trusted by 5,000+ Companies Worldwide</p>
-            <div className="w-full whitespace-nowrap overflow-x-auto items-center space-x-3 lg:flex lg:justify-center">
+            <p className='text-center my-3 md:my-5 text-xsm md:text-sm' style={{color: '#696984'}}>Trusted by 5,000+ Companies Worldwide</p>
+            <div className="w-full whitespace-nowrap overflow-x-auto items-center space-x-4 lg:space-x-8 lg:flex lg:justify-center">
                 <GoogleLogo />
                 <NetflixLogo />
                 <AirbnbLogo />

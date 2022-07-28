@@ -22,7 +22,7 @@ export function WhatIsContentionary(){
                 <Typography className="text-primary-orange font-semibold text-base" component="h1" align='center' gutterBottom>
                     <Typography component='span' className="text-primary-blue-200 font-semibold text-base">What is</Typography> Contentionary?
                 </Typography>
-                <Typography className='font-light text-xs md:text-sm' align='center' sx={{color: '#696984'}}>
+                <Typography className='font-light text-sm md:text-sm' align='center' sx={{color: '#696984'}}>
                     Contentionary is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; 
                     grade results and provide students with feedback all in one place.
                 </Typography>

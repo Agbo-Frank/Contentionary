@@ -29,33 +29,33 @@ export function AllInOne(){
             </Box>
 
             <Container className='hidden md:grid grid-cols-3 w-full lg:w-10/12 my-24 gap-3 lg:gap-6'>
-                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-xl border">
+                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-lg border">
                     <Avatar className="bg-primary-purple absolute left-1/2 -translate-x-1/2 -top-7 w-14 h-14">
                         <CalendarMonth fontSize='large'/>
                     </Avatar>
                     <Typography align='center' gutterBottom className="text-primary-blue-200 font-medium text-base mt-9">Online Billing, Invoicing, & Contracts</Typography>
-                    <Typography align="center" className="font-light">
-                    Simple and secure control of your organization’s financial 
-                    and legal transactions. Send customized invoices and contracts
+                    <Typography align="center" className="font-light text-sm">
+                        Simple and secure control of your organization’s financial 
+                        and legal transactions. Send customized invoices and contracts
                     </Typography>
                 </Paper>
 
-                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-xl">
+                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-lg">
                     <Avatar className="bg-primary-orange absolute left-1/2 -translate-x-1/2 -top-7 w-14 h-14">
                         <CalendarMonth fontSize='large'/>
                     </Avatar>
                     <Typography align="center" gutterBottom className="text-primary-blue-200 font-medium text-base mt-9">Easy Scheduling & Attendance Tracking</Typography>
-                    <Typography align="center" className="font-light">
+                    <Typography align="center" className="font-light text-sm">
                         Schedule and reserve classrooms at one campus or multiple 
                         campuses. Keep detailed records of student attendance
                     </Typography>
                 </Paper>
-                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-xl">
+                <Paper className="px-4 lg:px-7 py-8 relative rounded-2xl shadow-lg">
                     <Avatar className="bg-primary-blue absolute left-1/2 -translate-x-1/2 -top-7 w-14 h-14">
                         <GroupsIcon fontSize='large'/>
                     </Avatar>
                     <Typography align="center" gutterBottom className="text-primary-blue-200 font-medium text-base mt-9">Customer Tracking</Typography>
-                    <Typography align="center" className="font-light ">
+                    <Typography align="center" className="font-light text-sm">
                         Automate and track emails to individuals or groups. 
                         Contentionary’s built-in system helps organize your 
                         organization 

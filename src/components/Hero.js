@@ -17,7 +17,7 @@ export function Hero(){
                     </Typography>
                     <Typography sx={{
                         color: '#464646',
-                    }} className='text-xs md:text-sm font-light'>
+                    }} className='text-xsm md:text-sm font-light'>
                         Share, sell, engage, support and impact your audience/students 
                         using several Apps in Contentionary
                     </Typography>

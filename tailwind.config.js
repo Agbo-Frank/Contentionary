@@ -24,6 +24,9 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/src/asset/backgroundImg.png')",
       },
+      fontFamily:{
+        sans: ['Poppins', 'sans-serif'],
+      },
       fontSize: {
         'xsm': ["clamp(0.50rem, calc(0.70rem + 0.25vw), 0.88rem)", "1.4"],
         sm: ["clamp(0.90rem, calc(0.92rem + 0.39vw), 1.07rem)", "1.4"],
