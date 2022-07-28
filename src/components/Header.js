@@ -13,7 +13,7 @@ export function Header() {
             <div className="relative flex flex-row-reverse lg:flex-row lg:px-3 items-center lg:space-x-4 justify-between w-full">
                 <Logo />
 
-                <Box className={`${toggle ? 'block' : 'hidden'} bg-white w-full lg:bg-transparent absolute lg:relative top-0 left-0 z-50 lg:z-0 py-5 lg:py-1 lg:flex items-center space-y-1 lg:space-y-0 lg:space-x-4 justify-between`}>
+                <Box className={`${toggle ? 'block' : 'hidden'} bg-white w-full lg:w-auto lg:bg-transparent absolute lg:relative top-0 left-0 z-50 lg:z-0 py-5 lg:py-1 lg:flex items-center space-y-1 lg:space-y-0 lg:space-x-4 justify-between`}>
                     
                     <Button className="block lg:font-light">Home</Button>
                     <Button className="block lg:font-light">Careers</Button>
