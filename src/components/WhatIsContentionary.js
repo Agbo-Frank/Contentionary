@@ -32,19 +32,19 @@ export function WhatIsContentionary(){
                 <Card className="relative w-1/2 rounded-2xl" sx={{height: 280}}>
                     <img src={instructor} alt='instructor' className="w-full h-full object-cover"/>
                     <Box component="div" className="absolute bg-black/40 w-full h-full inset-0 grid place-items-center">
-                    <div>
+                    <Box>
                         <Typography gutterBottom align="center" className="text-white font-semibold text-base">FOR INSTRUCTORS</Typography>
                         <Button variant="outlined" color="white" className="py-2 mx-auto">Start a class today</Button>
-                    </div>
+                    </Box>
                     </Box>
                 </Card>
                 <Card sx={{height: 280}} className="relative w-1/2 rounded-2xl">
                     <img src={creator} alt='creator' className="w-full h-full object-cover"/>
                     <Box component="div" className="absolute bg-black/40 w-full h-full inset-0 grid place-items-center">
-                        <div>
+                        <Box>
                             <Typography gutterBottom align="center" className="text-white font-semibold text-base">FOR CREATORS</Typography>
                             <Button variant="outlined" color="white" className="py-2 mx-auto">Start a session today</Button>
-                        </div>
+                        </Box>
                     </Box>
                 </Card>
             </Container>

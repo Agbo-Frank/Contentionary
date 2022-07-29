@@ -1,11 +1,12 @@
 import './App.css';
-import { Footer, News, Hero, Companies, Integrations, Features, AllInOne, WhatIsContentionary} from './components';
+import { 
+  Footer, News, Hero, 
+  Companies, Integrations, 
+  Features, AllInOne, 
+  WhatIsContentionary
+} from './components';
 import { Container, Typography, Box, Link, } from '@mui/material';
 import teacher from './asset/confident-teacher.png'
-import teacher2 from './asset/teacher2.png'
-import teacher3 from './asset/teacher3.png'
-import teacher4 from './asset/teacher4.png'
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 

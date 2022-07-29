@@ -33,20 +33,20 @@ export function Footer(){
 
                 <Box component='ul' className="space-y-4">
                     <Typography component='li' gutterBottom className="text-xsm">RESOURCES</Typography>
-                    <li className="font-extralight text-xs">Developers Tools</li>
-                    <li className="font-extralight text-xs">Guides & FAQs</li>
-                    <li className="font-extralight text-xs">Blog Post</li>
-                    <li className="font-extralight text-xs">Help Centre</li>
-                    <li className="font-extralight text-xs">Customer Reviews</li>
+                    <Box component="li" className="font-extralight text-xs">Developers Tools</Box>
+                    <Box component="li" className="font-extralight text-xs">Guides & FAQs</Box>
+                    <Box component="li" className="font-extralight text-xs">Blog Post</Box>
+                    <Box component="li" className="font-extralight text-xs">Help Centre</Box>
+                    <Box component="li" className="font-extralight text-xs">Customer Reviews</Box>
                 </Box>
 
                 <Box component='ul' className="space-y-4">
                     <Typography component='li' gutterBottom className="text-xsm">COMPANY</Typography>
-                    <li className="font-extralight text-xs">About Us</li>
-                    <li className="font-extralight text-xs">Partners</li>
-                    <li className="font-extralight text-xs">Careers</li>
-                    <li className="font-extralight text-xs">Investors</li>
-                    <li className="font-extralight text-xs">Contact Us</li>
+                    <Box component="li" className="font-extralight text-xs">About Us</Box>
+                    <Box component="li" className="font-extralight text-xs">Partners</Box>
+                    <Box component="li" className="font-extralight text-xs">Careers</Box>
+                    <Box component="li" className="font-extralight text-xs">Investors</Box>
+                    <Box component="li" className="font-extralight text-xs">Contact Us</Box>
                 </Box>
             </Container>
             <p className="text-center font-extralight text-xs mt-12">© 2022 Contentionary. All rights reserved </p>

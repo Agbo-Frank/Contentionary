@@ -2,11 +2,12 @@ import { Container, Typography, Box, Avatar, Paper } from '@mui/material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import { CalendarMonth } from '@mui/icons-material';
 import Slider from 'react-slick';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export function AllInOne(){
     let [index, setIndex] = useState(0)
-    
+    let slide = useRef()
+
     const settings = {
         infinite: true,
         fade: true,
@@ -18,7 +19,7 @@ export function AllInOne(){
         afterChange: (i) => setIndex(i)
     };
     return(
-        <div>
+        <Box>
             <Box className="mx-auto px-3 w-full md:w-9/12 lg:w-7/12">
                 <Typography className="text-primary-orange font-semibold text-base" component="h1" align='center' gutterBottom>
                     <Typography component='span' className="text-primary-blue-200 font-semibold text-base">All-In-One</Typography> Cloud Software.
@@ -63,9 +64,9 @@ export function AllInOne(){
                 </Paper>
             </Container>
 
-            <div className='md:hidden w-full my-7'>
-                <Slider {...settings}>
-                    <div className='h-fit w-full md:w-10/12 pt-14 pb-5'>
+            <Box className='md:hidden w-full my-7'>
+                <Slider {...settings} ref={slide}>
+                    <Box className='h-fit w-full md:w-10/12 pt-14 pb-5'>
                         <Paper className="px-6 py-8 lg:p-8 relative rounded-2xl shadow-xl w-full md:w-10/12">
                             <Avatar className="bg-primary-purple absolute left-1/2 -translate-x-1/2 -top-8 w-20 md:w-14 h-20 md:h-14">
                                 <CalendarMonth className='text-5xl'/>
@@ -76,8 +77,8 @@ export function AllInOne(){
                                 and legal transactions. Send customized invoices and contracts
                             </Typography>
                         </Paper>
-                    </div>
-                    <div className='h-fit w-full md:w-10/12 pt-14 pb-5'>
+                    </Box>
+                    <Box className='h-fit w-full md:w-10/12 pt-14 pb-5'>
                         <Paper className="px-6 py-8 lg:p-8 relative rounded-2xl shadow-xl w-full md:w-10/12">
                             <Avatar className="bg-primary-orange absolute left-1/2 -translate-x-1/2 -top-8 w-20 md:w-14 h-20 md:h-14">
                                 <CalendarMonth className='text-5xl'/>
@@ -88,8 +89,8 @@ export function AllInOne(){
                                 campuses. Keep detailed records of student attendance
                             </Typography>
                         </Paper>
-                    </div>
-                    <div className='h-fit pt-14 w-full md:w-10/12 pb-5'>
+                    </Box>
+                    <Box className='h-fit pt-14 w-full md:w-10/12 pb-5'>
                         <Paper className="px-6 py-8 lg:p-8 relative rounded-2xl shadow-xl w-full md:w-10/12">
                             <Avatar className="bg-primary-blue absolute left-1/2 -translate-x-1/2 -top-8 w-20 md:w-14 h-20 md:h-14">
                                 <GroupsIcon className='text-5xl'/>
@@ -101,19 +102,20 @@ export function AllInOne(){
                                 organization 
                             </Typography>
                         </Paper>
-                    </div>
+                    </Box>
                 </Slider>
-                <div className='flex space-x-2 justify-center my-3'>
+                <Box className='flex space-x-2 justify-center my-3'>
                     {
                         [1, 2, 3].map((v, i) => (
-                            <div className={`${index === i && 'bg-secondary-200/50'} p-0.5 rounded-full`}>
-                                <div className='w-2 h-2 bg-secondary-200 rounded-full'></div>
-                            </div>
+                            <Box className={`${index === i && 'bg-secondary-200/50'} p-0.5 rounded-full cursor-pointer`}
+                            onClick={() => slide.current.slickGoTo(i)}>
+                                <Box className='w-2 h-2 bg-secondary-200 rounded-full'></Box>
+                            </Box>
                         ))
                     }
-                </div>
-            </div>
-        </div>
+                </Box>
+            </Box>
+        </Box>
     )
 }
 

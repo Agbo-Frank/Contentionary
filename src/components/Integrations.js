@@ -27,20 +27,20 @@ export function Integrations(){
         <>
             <Container className='flex flex-col space-y-10 md:space-y-0 md:flex-row justify-between mt-12 mb-20 md:my-16'>
                 <Box className='w-full md:w-5/12 space-y-2'>
-                    <div className='flex justify-around h-52'>
+                    <Box className='flex justify-around h-52'>
                         <img src={onedrive} alt="onedrive" className='self-start w-48 h-auto object-contain'/>
                         <img src={dropbox} alt="dropbox" className='self-end w-32 h-auto object-contain'/>
-                    </div>
-                    <div className='flex justify-around h-52'>
+                    </Box>
+                    <Box className='flex justify-around h-52'>
                         <img src={googledrive} alt="googledrive" className='self-start w-32 h-auto object-contain'/>
                         <img src={team} alt="team" className='self-end w-36 h-auto object-contain'/>
-                    </div>
+                    </Box>
                 </Box>
                 <Box className='w-full md:w-6/12 space-y-3 md:space-y-7'>
-                    <div className='flex w-full md:w-5/12 items-center space-x-4 md:mb-5'>
-                        <div className='border-t border-primary-blue-300 w-4/12'></div>
+                    <Box className='flex w-full md:w-5/12 items-center space-x-4 md:mb-5'>
+                        <Box className='border-t border-primary-blue-300 w-4/12'></Box>
                         <p className='font-light tracking-[.30em] text-xs text-primary-blue-300'>INTEGRATIONS</p>
-                    </div>
+                    </Box>
                     <Typography className="text-primary-blue-200 text-lg md:leading-10 font-medium" gutterBottom>
                         200+ educational tools and platform <Typography component="span" className="text-primary-orange text-lg font-medium">integrations</Typography>
                     </Typography>
@@ -54,12 +54,12 @@ export function Integrations(){
 
             <Container className='flex flex-col space-y-10 md:space-y-0 md:flex-row justify-between mt-12 md:mt-20'>
                 <Box className='w-full md:w-5/12 space-y-3 md:space-y-7 '>
-                    <div className='flex w-full md:w-5/12 items-center space-x-4 mb-5'>
-                        <div className='border-t border-primary-blue-300 w-4/12'></div>
+                    <Box className='flex w-full md:w-5/12 items-center space-x-4 mb-5'>
+                        <Box className='border-t border-primary-blue-300 w-4/12'></Box>
                         <p className='font-light tracking-[.30em] text-xs text-primary-blue-300'>TESTIMONIAL</p>
-                    </div>
+                    </Box>
                     <Typography className="text-primary-blue-200 text-xl md:leading-10" gutterBottom>What They Say?</Typography>
-                    <div>
+                    <Box>
                         <Typography className="text-secondary-200 font-light text-sm leading-6" component="p" gutterBottom>
                             Contentionary has got more than 100k positive ratings from our users around the world. 
                         </Typography>
@@ -69,22 +69,22 @@ export function Integrations(){
                         <Typography className="text-secondary-200 font-light text-sm leading-6" component="p" gutterBottom>
                             Are you too? Please give your assessment
                         </Typography>
-                    </div>
+                    </Box>
                     <Button color="primary" variant="outlined" className='py-2 my-4'>See All Integrations</Button>
                 </Box>
 
                 <Box className='w-full md:w-6/12 space-y-2'>
                     <Slider {...settings} ref={slide}>
-                        <div>
-                            <div className='w-full rounded-2xl relative'>
-                                <div className='w-full sm:w-80 relative'>
+                        <Box>
+                            <Box className='w-full rounded-2xl relative'>
+                                <Box className='w-full sm:w-80 relative'>
                                     <img src={student2} alt="student" className='w-full h-auto object-cover rounded-2xl'/>
                                     <Avatar sx={{bgcolor: '#ffffff'}} className="absolute top-1/2 right-0 md:-right-5 shadow-md z-50" onClick={() => {
                                         slide.current.slickGoTo(1, true)
                                     }}>
                                         <KeyboardArrowRightIcon sx={{color: '#1EA4CE'}}/>
                                     </Avatar>
-                                </div>
+                                </Box>
                                 
                                 <Box className='bg-white border-l-8 px-7 py-5 rounded-lg shadow-xl absolute top-3/4 left-9 w-full z-40' sx={{borderColor: '#F67766', maxWidth: 430}}>
                                     <Typography className="font-light border-l px-4 text-xs" gutterBottom sx={{color: '#5F5F7E'}}>
@@ -92,27 +92,27 @@ export function Integrations(){
                                         You won't regret it. It really saves me time and effort. 
                                         Contentionary is exactly what our business has been lacking."
                                     </Typography>
-                                    <div className='flex justify-between items-center space-y-3 px-7'>
+                                    <Box className='flex justify-between items-center space-y-3 px-7'>
                                         <p className='text-xs' style={{color: '#5F5F7E', fontSize: 11}}>Gloria Rose</p>
-                                        <div className="flex flex-col space-y-1 items-center">
+                                        <Box className="flex flex-col space-y-1 items-center">
                                             <Rating name="reating" defaultValue={5} readOnly size="small"/>
                                             <small style={{fontSize: 9, color: '#80819A'}}>12 reviews at Yelp</small>
-                                        </div>
-                                    </div>
+                                        </Box>
+                                    </Box>
                                 </Box>
-                            </div>
-                        </div>
+                            </Box>
+                        </Box>
 
-                        <div className='pb-20'>
-                            <div className='w-full rounded-2xl relative'>
-                                <div className='w-full sm:w-80 relative'>
+                        <Box className='pb-20'>
+                            <Box className='w-full rounded-2xl relative'>
+                                <Box className='w-full sm:w-80 relative'>
                                     <img src={student2} alt="student" className='w-full h-auto object-cover rounded-2xl'/>
                                     <Avatar sx={{bgcolor: '#ffffff'}} className="absolute top-1/2 right-0 md:-right-5 shadow-md z-50" onClick={() => {
                                         slide.current.slickGoTo(1, true)
                                     }}>
                                         <KeyboardArrowRightIcon sx={{color: '#1EA4CE'}}/>
                                     </Avatar>
-                                </div>
+                                </Box>
                                 
                                 <Box className='bg-white border-l-8 px-7 py-5 rounded-lg shadow-xl absolute top-3/4 left-9 w-full z-40' sx={{borderColor: '#F67766', maxWidth: 430}}>
                                     <Typography className="font-light border-l px-4 text-xs" gutterBottom sx={{color: '#5F5F7E'}}>
@@ -120,16 +120,16 @@ export function Integrations(){
                                         You won't regret it. It really saves me time and effort. 
                                         Contentionary is exactly what our business has been lacking."
                                     </Typography>
-                                    <div className='flex justify-between items-center space-y-3 px-7'>
+                                    <Box className='flex justify-between items-center space-y-3 px-7'>
                                         <p className='text-xs' style={{color: '#5F5F7E', fontSize: 11}}>Gloria Rose</p>
-                                        <div className="flex flex-col space-y-1 items-center">
+                                        <Box className="flex flex-col space-y-1 items-center">
                                             <Rating name="reating" defaultValue={5} readOnly size="small"/>
                                             <small style={{fontSize: 9, color: '#80819A'}}>12 reviews at Yelp</small>
-                                        </div>
-                                    </div>
+                                        </Box>
+                                    </Box>
                                 </Box>
-                            </div>
-                        </div>
+                            </Box>
+                        </Box>
                     </Slider>
                 </Box>
             </Container>
